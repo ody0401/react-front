@@ -138,6 +138,7 @@ typings/
 react-nodebird.pem
 react-nodebird-aws.pem
 react-front.pem
+react-back.pem
 node_modules
 .env
 .next
