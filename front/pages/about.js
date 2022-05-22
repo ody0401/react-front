@@ -49,7 +49,17 @@ const Profile = () => {
   );
 };
 
-export const getStaticProps = wrapper.getStaticProps(async (context) => {
+// export const getStaticProps = wrapper.getStaticProps(async (context) => {
+//   console.log('getStaticProps');
+//   context.store.dispatch({
+//     type: LOAD_USER_REQUEST,
+//     data: 1,
+//   });
+//   context.store.dispatch(END);
+//   await context.store.sagaTask.toPromise();
+// });
+
+export const getServerSideProps = wrapper.getServerSideProps(async (context) => {
   console.log('getStaticProps');
   context.store.dispatch({
     type: LOAD_USER_REQUEST,
